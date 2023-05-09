@@ -321,7 +321,7 @@ if choose =="Vegetation Risk":
         if option_3 =="Land Cover Map":
             st.image(Image.open("./static/LandCover_legend.png"))
         else:
-            st.image(Image.open("./static/2023FebEncroachmentHotspots_legend.png"))
+            st.image(Image.open("./static/tch_legend.png"))
 
 
 elif choose =="Structural Risk":
@@ -406,7 +406,7 @@ elif choose =="Structural Risk":
         with col2:               # To display brand log
       
             if structural == "Land Subsidence":
-                st.image(Image.open("./static/{}_legend.png".format("LandSubsidence")))
+                st.image(Image.open("./static/{}_leg.png".format("ls")))
     
     elif structural == "Potential Fouling Zones":
         col1, col2 = st.columns( [0.8, 0.2])
@@ -470,7 +470,7 @@ elif choose =="Structural Risk":
         with col2:               # To display brand log
             val = "The PDM is in mol/meter-square"
             st.markdown(f"<span style='font-size: 16px'>{val}</span>", unsafe_allow_html=True)
-            st.image(Image.open("./static/PollutionDistributionMap_legend.png"))
+            st.image(Image.open("./static/pdmindi_leg.png"))
 
 
 
