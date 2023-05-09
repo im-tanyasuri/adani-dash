@@ -13,42 +13,42 @@ import pandas as pd
 
 from shapely.geometry import Point, Polygon
 
-polygon_coordinates = [(17.657286304407112,76.01852179044518),
-          (17.604935005880794,75.99654913419518),
-          (17.42154314613821,76.11614389910297),
-          (17.259037501189077,76.24648809903893),
-          (16.991266605367713,76.47203258152042),
-          (16.76001655307398,76.74636602872643),
-          (16.499478139603386,76.94961309903893),
-          (16.148909636763662,77.22427130216393),
-          (16.111971285361168,77.36160040372643),
-          (16.214853821588722,77.42202520841393),
-          (16.317682662029174,77.33413458341393),
-          (16.675840851491426,77.00729132169518),
-          (17.211819044626772,76.53213263028893),
-          (17.69653979106962,76.08718634122643)]
+# polygon_coordinates = [(17.657286304407112,76.01852179044518),
+#           (17.604935005880794,75.99654913419518),
+#           (17.42154314613821,76.11614389910297),
+#           (17.259037501189077,76.24648809903893),
+#           (16.991266605367713,76.47203258152042),
+#           (16.76001655307398,76.74636602872643),
+#           (16.499478139603386,76.94961309903893),
+#           (16.148909636763662,77.22427130216393),
+#           (16.111971285361168,77.36160040372643),
+#           (16.214853821588722,77.42202520841393),
+#           (16.317682662029174,77.33413458341393),
+#           (16.675840851491426,77.00729132169518),
+#           (17.211819044626772,76.53213263028893),
+#           (17.69653979106962,76.08718634122643)]
 
 
 
 # Create a polygon object
-polygon = Polygon(polygon_coordinates)
+# polygon = Polygon(polygon_coordinates)
 df = pd.read_csv('./static/sholapur_raichur.csv')
 column1 = df['latitude']
 column2 = df['longitude']
 
 tuples = list(zip(column2,column1 ))
 
-points_inside_polygon = []
-for point in tuples:
+# points_inside_polygon = []
+# for point in tuples:
     # Create a point object
-    point_object = Point(point[0], point[1])
+    # point_object = Point(point[0], point[1])
 
-    # Check if the point is inside the polygon
-    if polygon.contains(point_object):
-        points_inside_polygon.append(point)
+    # # Check if the point is inside the polygon
+    # if polygon.contains(point_object):
+    #     points_inside_polygon.append(point)
 
 
-reversed_list = [t[::-1] for t in points_inside_polygon]
+reversed_list = [t[::-1] for t in tuples]
 
 st.set_page_config(page_title='GalaxEye Space-Transmission Line Monitoring', page_icon='./static/galaxeye.png', layout="wide")
 
