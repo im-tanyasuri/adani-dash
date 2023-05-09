@@ -194,7 +194,7 @@ if choose =="Vegetation Risk":
 
     col1, col2 = st.columns( [0.8, 0.2])
     with col1:               # To display the header text using css style
-        map = folium.Map(location=[16.754071892422, 76.85516009399588], zoom_start=11, scrollWheelZoom=True, tiles='Stamen Terrain')
+        map = folium.Map(location=[16.754071892422, 76.85516009399588], zoom_start=19, scrollWheelZoom=True, tiles='Stamen Terrain')
     
         folium.TileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
                 attr='ArcGIS',
