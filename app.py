@@ -525,7 +525,7 @@ elif choose == "Environmental Risk":
     col1, col2 = st.columns( [0.8, 0.2])
     with col1:               # To display the header text using css style
         if option_3 == "Land Surface Temperature":
-            map = folium.Map(location=[20.75710519982174,80.3587896427026], zoom_start=11, scrollWheelZoom=True, tiles='Stamen Terrain')
+            map = folium.Map(location=[16.754071892422, 76.85516009399588], zoom_start=11, scrollWheelZoom=True, tiles='Stamen Terrain')
         
             folium.TileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
                     attr='ArcGIS',
@@ -682,24 +682,24 @@ elif choose =="Drone Services":
             drone = st.video(video_bytes)
 
     
-            with col2 : 
-                    st.markdown(" ")
-                    st.markdown(" ")
-                    st.markdown(" ")
-                    st.markdown(" ")
-                    st.markdown(" ")
-                    st.markdown(" ")
-                    st.markdown(" ")
-                    st.markdown(" ")
-                    st.markdown(" ")
-                    st.markdown(" ")
-                    st.markdown(f"<span style='font-size: 18px'>Mean Height</span>", unsafe_allow_html=True)
-                    meanval = "6.54 m"
-                    st.markdown(f"<span style='font-size: 35px'>{meanval}</span>", unsafe_allow_html=True)
-                    st.markdown("""-------------------""")
-                    st.markdown(f"<span style='font-size: 18px'>Highest Tree</span>", unsafe_allow_html=True)
-                    meanval = "8.32 m"
-                    st.markdown(f"<span style='font-size: 35px'>{meanval}</span>", unsafe_allow_html=True)
+            # with col2 : 
+            #         st.markdown(" ")
+            #         st.markdown(" ")
+            #         st.markdown(" ")
+            #         st.markdown(" ")
+            #         st.markdown(" ")
+            #         st.markdown(" ")
+            #         st.markdown(" ")
+            #         st.markdown(" ")
+            #         st.markdown(" ")
+            #         st.markdown(" ")
+            #         st.markdown(f"<span style='font-size: 18px'>Mean Height</span>", unsafe_allow_html=True)
+            #         meanval = "6.54 m"
+            #         st.markdown(f"<span style='font-size: 35px'>{meanval}</span>", unsafe_allow_html=True)
+            #         st.markdown("""-------------------""")
+            #         st.markdown(f"<span style='font-size: 18px'>Highest Tree</span>", unsafe_allow_html=True)
+            #         meanval = "8.32 m"
+            #         st.markdown(f"<span style='font-size: 35px'>{meanval}</span>", unsafe_allow_html=True)
             # elif vid: 
               
             #     video_file = open('./static/drone.webm', 'rb')
