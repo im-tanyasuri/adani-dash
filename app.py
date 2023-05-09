@@ -47,7 +47,7 @@ for point in tuples:
         points_inside_polygon.append(point)
 
 
-reversed_list = [t[::-1] for t in points_inside_polygon]
+reversed_list = [t[::-1] for t in polygon_coordinates]
 
 st.set_page_config(page_title='GalaxEye Space-Transmission Line Monitoring', page_icon='./static/galaxeye.png', layout="wide")
 
