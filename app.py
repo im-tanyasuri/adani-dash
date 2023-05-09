@@ -168,7 +168,7 @@ if choose =="Vegetation Risk":
         
         Year = st.selectbox("Year", ["2023"])
     with col2:
-        Month = st.selectbox("Month", ["Feb", "Mar", "Apr"])
+        Month = st.selectbox("Month", [ "Apr"])
     with col3:
         
         option_3 = st.selectbox("Insight", ["Encroachment Hotspots", "Land Cover Map"])
@@ -194,7 +194,7 @@ if choose =="Vegetation Risk":
 
     col1, col2 = st.columns( [0.8, 0.2])
     with col1:               # To display the header text using css style
-        map = folium.Map(location=[20.75710519982174,80.3587896427026], zoom_start=11, scrollWheelZoom=True, tiles='Stamen Terrain')
+        map = folium.Map(location=[16.754071892422, 76.85516009399588], zoom_start=11, scrollWheelZoom=True, tiles='Stamen Terrain')
     
         folium.TileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
                 attr='ArcGIS',
@@ -205,7 +205,7 @@ if choose =="Vegetation Risk":
         
         img = folium.raster_layers.ImageOverlay(
         name= option_3,
-        image="./static/{}.png".format(Year+Month+option_3.split(' ')[0]+option_3.split(' ')[1]),
+        image="./static/{}_indiG.png".format(Year+Month+option_3.split(' ')[0]+option_3.split(' ')[1]),
         bounds=vertices,
         opacity=1.0,
         interactive=True,
