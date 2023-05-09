@@ -205,7 +205,7 @@ if choose =="Vegetation Risk":
         
         img = folium.raster_layers.ImageOverlay(
         name= option_3,
-        image="./static/{}_indiG.png".format(Year+Month+option_3.split(' ')[0]+option_3.split(' ')[1]),
+        image="./static/{}_IndiGrid.png".format(Year+Month+option_3.split(' ')[0]+option_3.split(' ')[1]),
         bounds=vertices,
         opacity=1.0,
         interactive=True,
