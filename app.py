@@ -536,7 +536,7 @@ elif choose == "Environmental Risk":
             
             img = folium.raster_layers.ImageOverlay(
             name= option_3,
-            image="./static/Thermal.png",
+            image="./static/Thermal_indi.png",
             bounds=vertices,
             opacity=1.0,
             interactive=True,
@@ -567,7 +567,7 @@ elif choose == "Environmental Risk":
             
             img = folium.raster_layers.ImageOverlay(
             name= option_3,
-            image="./static/MarchNDMI.png",
+            image="./static/FEBNDMI.png",
             bounds=vertices,
             opacity=1.0,
             interactive=True,
@@ -681,20 +681,8 @@ elif choose =="Drone Services":
             video_bytes = video_file.read()
             drone = st.video(video_bytes)
 
-            an = st.button('Show Analysis')
-            #vid = st.button('3D point cloud')
-            if an:
-                
-                drone.empty()
-              
-                pt = st.image(pt_cloud, caption='3D Encraochment analysis',use_column_width=True)
-                
-                an = st.button('Back to 3D point cloud video')
-                if an:
-                    video_file = open('./static/drone.webm', 'rb')
-                    video_bytes = video_file.read()
-                    drone = st.video(video_bytes)
-                with col2 : 
+    
+            with col2 : 
                     st.markdown(" ")
                     st.markdown(" ")
                     st.markdown(" ")
