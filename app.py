@@ -685,7 +685,7 @@ elif choose =="Drone Services":
             pt_cloud = Image.open("./static/3d_pc.png")
             video_file = open('./static/drone.webm', 'rb')
             video_bytes = video_file.read()
-            drone = st.video(video_bytes, width=1000)
+            drone = st.video(video_bytes)
 
     
             # with col2 : 
