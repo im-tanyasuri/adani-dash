@@ -556,7 +556,7 @@ elif choose == "Environmental Risk":
             folium.LayerControl().add_to(map)
         
         elif option_3 == "Vegetation Moisture Index":
-            map = folium.Map(location=[20.75710519982174,80.3587896427026], zoom_start=11, scrollWheelZoom=True, tiles='Stamen Terrain')
+            map = folium.Map(location=[16.754071892422, 76.85516009399588], zoom_start=11, scrollWheelZoom=True, tiles='Stamen Terrain')
         
             folium.TileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
                     attr='ArcGIS',
@@ -589,7 +589,7 @@ elif choose == "Environmental Risk":
         elif option_3 == "Fire Hotspots":
             val = "The environmental fire prone areas are marked here with yellow circles"
             st.markdown(f"<span style='font-size: 12px'>{val}</span>", unsafe_allow_html=True)
-            map = folium.Map(location=[20.75710519982174,80.3587896427026], zoom_start=11, scrollWheelZoom=True, tiles='Stamen Terrain')
+            map = folium.Map(location=[16.754071892422, 76.85516009399588], zoom_start=11, scrollWheelZoom=True, tiles='Stamen Terrain')
         
             folium.TileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
                     attr='ArcGIS',
@@ -642,14 +642,14 @@ elif choose == "Environmental Risk":
         elif option_3 =="Land Surface Temperature":
             st.image(Image.open("./static/LST_legend.png"))
 
-            st.markdown(f"<span style='font-size: 14px'>The mean LST for this area</span>", unsafe_allow_html=True)
-            meanval = "30.091 C"
-            st.markdown(f"<span style='font-size: 35px'>{meanval}</span>", unsafe_allow_html=True)
+            # st.markdown(f"<span style='font-size: 14px'>The mean LST for this area</span>", unsafe_allow_html=True)
+            # meanval = "30.091 C"
+            # st.markdown(f"<span style='font-size: 35px'>{meanval}</span>", unsafe_allow_html=True)
         elif option_3 =="Vegetation Moisture Index":
             st.image(Image.open("./static/NDMI_legend.png"))
-            st.markdown(f"<span style='font-size: 14px'>The mean Vegetation Moisture for this area</span>", unsafe_allow_html=True)
-            meanval = "0.042"
-            st.markdown(f"<span style='font-size: 35px'>{meanval}</span>", unsafe_allow_html=True)
+            # st.markdown(f"<span style='font-size: 14px'>The mean Vegetation Moisture for this area</span>", unsafe_allow_html=True)
+            # meanval = "0.042"
+            # st.markdown(f"<span style='font-size: 35px'>{meanval}</span>", unsafe_allow_html=True)
 
             
 
