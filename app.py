@@ -323,7 +323,7 @@ if choose =="Vegetation Risk":
         else:
             st.image(Image.open("./static/tch_legend.png"))
             val = "The map here, shows sparse tree cover, because of which this line has low vegetation risk."
-            st.markdown(f"<span style='font-size: 16px'>{val}</span>", unsafe_allow_html=True)
+            st.markdown(f"<span style='font-size: 13px'>{val}</span>", unsafe_allow_html=True)
 
 
 elif choose =="Structural Risk":
@@ -410,7 +410,7 @@ elif choose =="Structural Risk":
             if structural == "Land Subsidence":
                 st.image(Image.open("./static/{}_leg.png".format("ls")))
                 val = "Yellow zones are more neutral, whereas darker the shade of blue or red, more displacement is observed"
-                st.markdown(f"<span style='font-size: 16px'>{val}</span>", unsafe_allow_html=True)
+                st.markdown(f"<span style='font-size: 13px'>{val}</span>", unsafe_allow_html=True)
     
     elif structural == "Potential Fouling Zones":
         col1, col2 = st.columns( [0.8, 0.2])
@@ -476,7 +476,7 @@ elif choose =="Structural Risk":
             st.markdown(f"<span style='font-size: 16px'>{val}</span>", unsafe_allow_html=True)
             st.image(Image.open("./static/pdmindi_leg.png"))
             val = "More susceptible regions are in yellow - red range"
-            st.markdown(f"<span style='font-size: 16px'>{val}</span>", unsafe_allow_html=True)
+            st.markdown(f"<span style='font-size: 13px'>{val}</span>", unsafe_allow_html=True)
 
 
 
@@ -593,8 +593,8 @@ elif choose == "Environmental Risk":
             folium.LayerControl().add_to(map)
 
         elif option_3 == "Fire Hotspots":
-            val = "The environmental fire prone areas are marked here with yellow circles"
-            st.markdown(f"<span style='font-size: 12px'>{val}</span>", unsafe_allow_html=True)
+            # val = "The environmental fire prone areas are marked here with yellow circles"
+            # st.markdown(f"<span style='font-size: 12px'>{val}</span>", unsafe_allow_html=True)
             map = folium.Map(location=[16.754071892422, 76.85516009399588], zoom_start=11, scrollWheelZoom=True, tiles='Stamen Terrain')
         
             folium.TileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
