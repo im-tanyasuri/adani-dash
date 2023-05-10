@@ -10,7 +10,7 @@ from utils import popupTable
 import branca
 from pathlib import Path
 import pandas as pd
-
+import streamlit_authenticator as stauth
 from shapely.geometry import Point, Polygon
 
 # polygon_coordinates = [(17.657286304407112,76.01852179044518),
@@ -28,8 +28,22 @@ from shapely.geometry import Point, Polygon
 #           (17.211819044626772,76.53213263028893),
 #           (17.69653979106962,76.08718634122643)]
 
+names = ['IndiGrid','GalaxEye']
+usernames = ['indigrid','galaxeye']
+passwords = ['indigrid@123','galaxeye@123']
 
+hashed_passwords = stauth.hasher(passwords).generate()
 
+authenticator = stauth.authenticate(names,usernames,hashed_passwords,'cookie_name', 'signature_key',cookie_expiry_days=30)
+
+name, authentication_status = authenticator.login('Login')
+if authentication_status:
+     st.write('Welcome *%s*' % (name))
+ # your application
+elif authentication_status == False:
+ st.error('Username/password is incorrect')
+elif authentication_status == None:
+ st.warning('Please enter your username and password')
 # Create a polygon object
 # polygon = Polygon(polygon_coordinates)
 df = pd.read_csv('./static/sholapur_raichur.csv')
