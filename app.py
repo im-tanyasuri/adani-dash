@@ -322,6 +322,8 @@ if choose =="Vegetation Risk":
             st.image(Image.open("./static/LandCover_legend.png"))
         else:
             st.image(Image.open("./static/tch_legend.png"))
+            val = "The map here, shows sparse tree cover, because of which this line has low vegetation risk."
+            st.markdown(f"<span style='font-size: 16px'>{val}</span>", unsafe_allow_html=True)
 
 
 elif choose =="Structural Risk":
@@ -407,6 +409,8 @@ elif choose =="Structural Risk":
       
             if structural == "Land Subsidence":
                 st.image(Image.open("./static/{}_leg.png".format("ls")))
+                val = "Yellow zones are more neutral, whereas darker the shade of blue or red, more displacement is observed"
+                st.markdown(f"<span style='font-size: 16px'>{val}</span>", unsafe_allow_html=True)
     
     elif structural == "Potential Fouling Zones":
         col1, col2 = st.columns( [0.8, 0.2])
@@ -422,7 +426,7 @@ elif choose =="Structural Risk":
 
             st.markdown(f"<span style='font-size: 16px'>{selected_ground_option_text}</span>", unsafe_allow_html=True)
             val = "The Transmission Towers in the region with high industrial Pollution value are more susceptible to\
-                    flash-overs caused by fouling and are marked here with red circles"
+                    flash-overs caused by fouling those regions are in yellow - red range"
             st.markdown(f"<span style='font-size: 12px'>{val}</span>", unsafe_allow_html=True)
 
     
@@ -471,6 +475,8 @@ elif choose =="Structural Risk":
             val = "The PDM is in mol/meter-square"
             st.markdown(f"<span style='font-size: 16px'>{val}</span>", unsafe_allow_html=True)
             st.image(Image.open("./static/pdmindi_leg.png"))
+            val = "More susceptible regions are in yellow - red range"
+            st.markdown(f"<span style='font-size: 16px'>{val}</span>", unsafe_allow_html=True)
 
 
 
