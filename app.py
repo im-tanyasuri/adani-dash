@@ -10,7 +10,6 @@ from utils import popupTable
 import branca
 from pathlib import Path
 import pandas as pd
-import streamlit_authenticator as stauth
 from shapely.geometry import Point, Polygon
 
 
