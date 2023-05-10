@@ -255,14 +255,14 @@ if choose =="Vegetation Risk":
     col1, col2,col3 = st.columns(3)
     with col1:
         
-        Year = st.selectbox("Year", ["2023"])
+        Year = st.selectbox("Year", ["Year"])
     with col2:
-        Month = st.selectbox("Month", [ "Apr"])
+        Month = st.selectbox("Month", [ "Month"])
     with col3:
         
         option_3 = st.selectbox("Insight", ["Encroachment Hotspots", "Land Cover Map"])
 
-    Year = "2023"
+    Year = "Year"
     
     col1, col2 = st.columns( [0.8, 0.2])
     with col1:               # To display the header text using css style
@@ -294,7 +294,7 @@ if choose =="Vegetation Risk":
         
         img = folium.raster_layers.ImageOverlay(
         name= option_3,
-        image="./static/{}_IndiGrid.png".format(Year+Month+option_3.split(' ')[0]+option_3.split(' ')[1]),
+        image="./static/{}_IndiGrid.png".format('2023Apr'+option_3.split(' ')[0]+option_3.split(' ')[1]),
         bounds=vertices,
         opacity=1.0,
         interactive=True,
@@ -486,9 +486,9 @@ elif choose == "Environmental Risk":
 
     col1, col2,col3 = st.columns(3)
     with col1:
-        Year = st.selectbox("Year", ["2023"])
+        Year = st.selectbox("Year", ["Year"])
     with col2:
-        Month = st.selectbox("Month", ["Mar"])
+        Month = st.selectbox("Month", ["Month"])
     with col3:
         
         option_3 = st.selectbox("Insight", ["Fire Hotspots","Land Surface Temperature", "Vegetation Moisture Index"])
@@ -767,17 +767,17 @@ elif choose =="Report Generation":
     col1, col2 = st.columns(2)
     with col1:
         
-        Year = st.selectbox("Year", ["2023"])
+        Year = st.selectbox("Year", ["Year"])
     with col2:
-        Month = st.selectbox("Month", ["Mar"])
+        Month = st.selectbox("Month", ["Month"])
 
        
   
-    with open("./static/March_Report.xlsx", "rb") as template_file:
+    with open("./static/satelliteReport.xlsx", "rb") as template_file:
         template_byte = template_file.read()
 
     st.download_button(label="Download report",
                         data=template_byte,
-                        file_name="./static/March_Report.xlsx",
+                        file_name="./static/satellite_Report.xlsx",
                         mime='application/octet-stream')
     
