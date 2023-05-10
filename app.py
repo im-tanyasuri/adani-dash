@@ -685,7 +685,7 @@ elif choose =="Drone Services":
             pt_cloud = Image.open("./static/3d_pc.png")
             video_file = open('./static/drone.webm', 'rb')
             video_bytes = video_file.read()
-            drone = st.video(video_bytes)
+            drone = st.video(video_bytes, width=1000)
 
     
             # with col2 : 
@@ -737,7 +737,7 @@ elif choose =="Drone Services":
             font-size:30px ; font-family: 'Cooper Black'; color: #ffffff;} 
             </style> """, unsafe_allow_html=True)
             st.markdown('<p class="font">{}</p>'.format("Radar Image for Transmission Lines"), unsafe_allow_html=True) 
-            radar = Image.open("./static/dronesar.png")
+            radar = Image.open("./static/sagging_indiG.png")
             st.image(radar, width=1000)
 
         
