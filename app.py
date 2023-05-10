@@ -642,7 +642,7 @@ if check_password():
                 
                 img = folium.raster_layers.ImageOverlay(
                 name= option_3,
-                image="./static/Correlation.png",
+                image="./static/hot.png",
                 bounds=vertices,
                 opacity=1.0,
                 interactive=True,
@@ -658,9 +658,9 @@ if check_password():
             
                 
                 img.add_to(map)
-                for i in range(len(firespots)):
+                # for i in range(len(firespots)):
         
-                    folium.CircleMarker(location=firespots[i],radius=15,color='yellow',line_width=50, opacity=5).add_to(map)
+                #     folium.CircleMarker(location=firespots[i],radius=15,color='yellow',line_width=50, opacity=5).add_to(map)
 
                 for i in range(len(locations)):
                     folium.Marker(location=locations[i],
