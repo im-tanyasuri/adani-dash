@@ -378,7 +378,11 @@ if check_password():
     # Display the radio buttons with the custom CSS style
         st.markdown(radio_style, unsafe_allow_html=True)
     
-        structural = st.radio("",["Land Subsidence","Potential Fouling Zones"])
+        #structural = st.radio("",["Land Subsidence","Potential Fouling Zones"])
+        col1, col2= st.columns(2)
+        with col1:
+            
+            structural = st.selectbox("Insight", ["Land Subsidence", "Potential Fouling Zones"])
         if structural =="Land Subsidence":
             col1, col2 = st.columns( [0.8, 0.2])
             with col1:               # To display the header text using css style
