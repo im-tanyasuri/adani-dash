@@ -579,7 +579,7 @@ if check_password():
                 
                 img = folium.raster_layers.ImageOverlay(
                 name= option_3,
-                image="./static/Thermal_indi.png",
+                image="./static/hotspot2.png",
                 bounds=vertices,
                 opacity=1.0,
                 interactive=True,
@@ -597,6 +597,7 @@ if check_password():
 
                 st_map = st_folium(map, width=1100, height=550)
                 folium.LayerControl().add_to(map)
+                
             
             elif option_3 == "Vegetation Moisture Index":
                 map = folium.Map(location=[16.754071892422, 76.85516009399588], zoom_start=11, scrollWheelZoom=True, tiles='Stamen Terrain')
@@ -667,7 +668,7 @@ if check_password():
                     icon= folium.Icon(color='blue',
                     icon_color='yellow',icon ="tower"),popup='Coordinates: {}'.format(locations[i])).add_to(map)
             
-                    #folium.Marker(location=locations[i],radius=2,color='black').add_to(map)
+                    folium.Marker(location=locations[i],radius=2,color='black').add_to(map)
                 polygon = folium.Polygon(locations=verticesROW, color='black', fill_color=None, fill_opacity=1.0).add_to(map)
 
                 st_map = st_folium(map, width=1100, height=550)
@@ -683,7 +684,12 @@ if check_password():
 
 
             elif option_3 =="Land Surface Temperature":
-                st.image(Image.open("./static/LST_legend.png"))
+                st.image(Image.open("./static/temp_leg.png"))
+               # st.markdown(f"<span style='font-size: 16px'>{selected_ground_option_text}</span>", unsafe_allow_html=True)
+                val = "The yellow region shows average temperature, blue region are relatively colder and red regions have the maximum\
+                    temperature in this ROW. This thresholding of temperature will vary from region to region as average temperature \
+                        is region dependent as well."
+                st.markdown(f"<span style='font-size: 12px'>{val}</span>", unsafe_allow_html=True)
 
                 # st.markdown(f"<span style='font-size: 14px'>The mean LST for this area</span>", unsafe_allow_html=True)
                 # meanval = "30.091 C"
