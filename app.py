@@ -580,7 +580,7 @@ if check_password():
 
             if option_3 == "Fire Hotspots":
                 option_3text = FireHotspots_text
-            elif option_3 == "Land Surface Temperature":
+            elif option_3 == "Temperature":
                 option_3text = LandSurfaceTemperature_text
             elif option_3 == "Vegetation Moisture Index":
                 option_3text = VegetationMoistureIndex_text
