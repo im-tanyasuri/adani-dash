@@ -329,29 +329,52 @@ if check_password():
                     control=True).add_to(map)
             #folium.LayerControl().add_to(map)
             
-            img = folium.raster_layers.ImageOverlay(
-            name= option_3,
-            image="./static/{}_IndiGrid.png".format('2023Apr'+option_3.split(' ')[0]+option_3.split(' ')[1]),
-            bounds=vertices,
-            opacity=1.0,
-            interactive=True,
-            cross_origin=False,
-            zindex=1,
-            )
+            if option_3 =="Land Cover Map":
+                img = folium.raster_layers.ImageOverlay(
+                name= option_3,
+                image="./static/{}_IndiGrid.png".format('2023Apr'+option_3.split(' ')[0]+option_3.split(' ')[1]),
+                bounds=vertices,
+                opacity=1.0,
+                interactive=True,
+                cross_origin=False,
+                zindex=1,
+                )
 
-            img.add_to(map)
-            for i in range(len(locations)):
-                    folium.Marker(location=locations[i],
-                    icon= folium.Icon(color='blue',
-                    icon_color='yellow',icon ="tower"),popup='Coordinates: {}'.format(locations[i])).add_to(map)
-        
-                #folium.Marker(location=locations[i],radius=2,color='black').add_to(map)
-            polygon = folium.Polygon(locations=verticesROW, color='black', fill_color=None, fill_opacity=1.0).add_to(map)
-
-            st_map = st_folium(map, width=1100, height=550)
-            folium.LayerControl().add_to(map)
-        
+                img.add_to(map)
+                for i in range(len(locations)):
+                        folium.Marker(location=locations[i],
+                        icon= folium.Icon(color='blue',
+                        icon_color='yellow',icon ="tower"),popup='Coordinates: {}'.format(locations[i])).add_to(map)
             
+                    #folium.Marker(location=locations[i],radius=2,color='black').add_to(map)
+                polygon = folium.Polygon(locations=verticesROW, color='black', fill_color=None, fill_opacity=1.0).add_to(map)
+
+                st_map = st_folium(map, width=1100, height=550)
+                folium.LayerControl().add_to(map)
+            
+            else:
+                img = folium.raster_layers.ImageOverlay(
+                name= option_3,
+                image="./static/encroachment_clipped.png",
+                bounds=verticesROW,
+                opacity=1.0,
+                interactive=True,
+                cross_origin=False,
+                zindex=1,
+                )
+
+                img.add_to(map)
+                for i in range(len(locations)):
+                        folium.Marker(location=locations[i],
+                        icon= folium.Icon(color='blue',
+                        icon_color='yellow',icon ="tower"),popup='Coordinates: {}'.format(locations[i])).add_to(map)
+            
+                    #folium.Marker(location=locations[i],radius=2,color='black').add_to(map)
+                polygon = folium.Polygon(locations=verticesROW, color='black', fill_color=None, fill_opacity=1.0).add_to(map)
+
+                st_map = st_folium(map, width=1100, height=550)
+                folium.LayerControl().add_to(map)
+
     
         with col2:   
             
@@ -571,8 +594,8 @@ if check_password():
 
         col1, col2 = st.columns( [0.8, 0.2])
         with col1:               # To display the header text using css style
-            if option_3 == "Land Surface Temperature":
-                map = folium.Map(location=[16.754071892422, 76.85516009399588], zoom_start=11, scrollWheelZoom=True, tiles='Stamen Terrain')
+            if option_3 == "Temperature":
+                map = folium.Map(location=[16.754071892422, 76.85516009399588], zoom_start=14, scrollWheelZoom=True, tiles='Stamen Terrain')
             
                 folium.TileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
                         attr='ArcGIS',
