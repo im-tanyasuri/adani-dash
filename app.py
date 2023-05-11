@@ -95,7 +95,7 @@ if check_password():
     with st.sidebar:
     
         
-        choose = option_menu("GALAXEYE LIVE", ["Dashboard","Environmental Risk","Vegetation Risk","Structural Risk","Report Generation","Drone Services"],
+        choose = option_menu("GALAXEYE LIVE", ["Dashboard","Environmental Risk","Vegetation Risk","Structural Risk","Report Generation"],
                             icons=['graph-up','tree','cloud-upload','cloud-haze2','book'],
                             menu_icon="cast", default_index=0,orientation="horizontal",
                             styles={
