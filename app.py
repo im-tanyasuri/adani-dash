@@ -95,7 +95,7 @@ if check_password():
     with st.sidebar:
     
         
-        choose = option_menu("GALAXEYE LIVE", ["Dashboard","Vegetation Risk","Structural Risk","Environmental Risk","Report Generation","Drone Services"],
+        choose = option_menu("GALAXEYE LIVE", ["Dashboard","Environmental Risk","Vegetation Risk","Structural Risk","Report Generation","Drone Services"],
                             icons=['graph-up','tree','cloud-upload','cloud-haze2','book'],
                             menu_icon="cast", default_index=0,orientation="horizontal",
                             styles={
@@ -534,7 +534,7 @@ if check_password():
             Month = st.selectbox("Month", ["Month"])
         with col3:
             
-            option_3 = st.selectbox("Insight", ["Fire Hotspots","Land Surface Temperature", "Vegetation Moisture Index"])
+            option_3 = st.selectbox("Insight", ["Land Surface Temperature", "Vegetation Moisture Index","Fire Hotspots"])
 
         col1, col2 = st.columns( [0.8, 0.2])
         with col1:               # To display the header text using css style
