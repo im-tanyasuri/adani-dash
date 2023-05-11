@@ -289,15 +289,15 @@ if check_password():
         with col2:
             st.image(logo, width=130 )
 
-        col1, col2,col3 = st.columns(3)
+        col1, col2= st.columns(2)
         with col1:
             
-            Year = st.selectbox("Year", ["Year"])
-        with col2:
-            Month = st.selectbox("Month", [ "Month"])
-        with col3:
-            
             option_3 = st.selectbox("Insight", ["Encroachment Hotspots", "Land Cover Map"])
+        # with col2:
+        #     Month = st.selectbox("Month", [ "Month"])
+        # with col3:
+            
+            
 
         Year = "Year"
         
@@ -527,12 +527,12 @@ if check_password():
         with col2:
             st.image(logo, width=130 )
 
-        col1, col2,col3 = st.columns(3)
+        col1, col2= st.columns(2)
+        # with col1:
+        #     Year = st.selectbox("Year", ["Year"])
+        # with col2:
+        #     Month = st.selectbox("Month", ["Month"])
         with col1:
-            Year = st.selectbox("Year", ["Year"])
-        with col2:
-            Month = st.selectbox("Month", ["Month"])
-        with col3:
             
             option_3 = st.selectbox("Insight", ["Land Surface Temperature", "Vegetation Moisture Index","Fire Hotspots"])
 
@@ -813,12 +813,12 @@ if check_password():
         with col2:
             st.image(logo, width=130 )
 
-        col1, col2 = st.columns(2)
-        with col1:
+        # col1, col2 = st.columns(2)
+        # with col1:
             
-            Year = st.selectbox("Year", ["Year"])
-        with col2:
-            Month = st.selectbox("Month", ["Month"])
+        #     Year = st.selectbox("Year", ["Year"])
+        # with col2:
+        #     Month = st.selectbox("Month", ["Month"])
 
         
     
