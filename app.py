@@ -710,7 +710,7 @@ if check_password():
                 st.image(Image.open("./static/try.png"))
 
 
-            elif option_3 =="Land Surface Temperature":
+            elif option_3 =="Temperature":
                 st.image(Image.open("./static/temp_leg.png"))
                # st.markdown(f"<span style='font-size: 16px'>{selected_ground_option_text}</span>", unsafe_allow_html=True)
                 val = "The yellow region shows average temperature, blue region are relatively colder and red regions have the maximum\
