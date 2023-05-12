@@ -427,8 +427,7 @@ if check_password():
                 
                 st.markdown(f"<span style='font-size: 16px'>{selected_ground_option_text}</span>", unsafe_allow_html=True)
 
-                val = "This is a 1 year displacement map for 2022'March to 2023'March. The Transmission tower with at risk of\
-                    loss of integrity with the ground is marked in red cirle in the map below"
+                val = "This is a 1 year displacement map for 2022'March to 2023'March."
                 st.markdown(f"<span style='font-size: 12px'>{val}</span>", unsafe_allow_html=True)
 
                 
