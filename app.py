@@ -473,7 +473,7 @@ if check_password():
         
                 if structural == "Land Subsidence":
                     st.image(Image.open("./static/{}_leg.png".format("ls")))
-                    val = "Yellow zones are more neutral, whereas darker the shade of blue or red, more displacement is observed"
+                    val = "The positive value means downward displacement and the negative value means upward displacement. Yellow zones are more neutral, whereas darker the shade of blue or red, more displacement is observed"
                     st.markdown(f"<span style='font-size: 13px'>{val}</span>", unsafe_allow_html=True)
         
         elif structural == "Potential Fouling Zones":
