@@ -95,7 +95,7 @@ if check_password():
     with st.sidebar:
     
         
-        choose = option_menu("GALAXEYE LIVE", ["Dashboard","Environmental Risk","Vegetation Risk","Asset Risk","Report Generation"],
+        choose = option_menu("GALAXEYE LIVE", ["Dashboard","Environmental Risk","Vegetation Risk","Asset Health Risk","Report Generation"],
                             icons=['graph-up','tree','cloud-upload','cloud-haze2','book'],
                             menu_icon="cast", default_index=0,orientation="horizontal",
                             styles={
@@ -386,7 +386,7 @@ if check_password():
                 st.markdown(f"<span style='font-size: 13px'>{val}</span>", unsafe_allow_html=True)
 
 
-    elif choose =="Asset Risk":
+    elif choose =="Asset Health Risk":
         col1,col2 = st.columns([0.94,0.06])
         with col1:
             st.markdown(""" <style> .fonty {
