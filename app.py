@@ -11,7 +11,7 @@ import branca
 from pathlib import Path
 import pandas as pd
 from shapely.geometry import Point, Polygon
-
+import geojson
 
 # polygon_coordinates = [(17.657286304407112,76.01852179044518),
 #           (17.604935005880794,75.99654913419518),
@@ -226,6 +226,13 @@ if check_password():
             [76.09256398558772, 17.598154503959414],
             [76.08363759398615, 17.60502673637744],
             [76.05788838744319, 17.617461539665484]]
+    
+
+    datastring = './static/map_row.geojson'
+    with open(datastring) as f:
+        gj = geojson.load(f)
+
+    verticestuple = gj['features'][0]['geometry']['coordinates'][0]
 
     verticesROW = [t[::-1] for t in verticestuple]
     logo = Image.open("./static/galaxeye.png")
