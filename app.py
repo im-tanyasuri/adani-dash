@@ -95,7 +95,7 @@ if check_password():
     with st.sidebar:
     
         
-        choose = option_menu("GALAXEYE LIVE", ["Dashboard","Environmental Risk","Vegetation Risk","Structural Risk","Report Generation"],
+        choose = option_menu("GALAXEYE LIVE", ["Dashboard","Environmental Risk","Vegetation Risk","Asset Risk","Report Generation"],
                             icons=['graph-up','tree','cloud-upload','cloud-haze2','book'],
                             menu_icon="cast", default_index=0,orientation="horizontal",
                             styles={
@@ -386,7 +386,7 @@ if check_password():
                 st.markdown(f"<span style='font-size: 13px'>{val}</span>", unsafe_allow_html=True)
 
 
-    elif choose =="Structural Risk":
+    elif choose =="Asset Risk":
         col1,col2 = st.columns([0.94,0.06])
         with col1:
             st.markdown(""" <style> .fonty {
@@ -405,7 +405,7 @@ if check_password():
         col1, col2= st.columns(2)
         with col1:
             
-            structural = st.selectbox("Insight", ["Land Subsidence", "Potential Fouling Zones"])
+            structural = st.selectbox("Insight", ["Land Subsidence", "Potential Fouling Zones","Atmospheric Corrosion"])
         if structural =="Land Subsidence":
             col1, col2 = st.columns( [0.8, 0.2])
             with col1:               # To display the header text using css style
@@ -538,6 +538,78 @@ if check_password():
                 val = "The PDM is in mol/meter-square"
                 st.markdown(f"<span style='font-size: 16px'>{val}</span>", unsafe_allow_html=True)
                 st.image(Image.open("./static/pdmindi_leg.png"))
+                val = "More susceptible regions are in yellow - red range"
+                st.markdown(f"<span style='font-size: 13px'>{val}</span>", unsafe_allow_html=True)
+
+
+        elif structural == "Atmospheric Corrosion":
+            col1, col2 = st.columns( [0.8, 0.2])
+            with col1:               # To display the header text using css style
+                st.markdown(""" <style> .font {
+                font-size:30px ; font-family: 'Cooper Black'; color: #ffffff;} 
+                </style> """, unsafe_allow_html=True)
+                st.markdown('<p class="font">{}</p>'.format(structural), unsafe_allow_html=True)   
+                selected_ground_option_text = "Corrosion is the process of slow eating up \
+                    of a metal by the gasses and water vapours present in the air due to the formation of\
+                          certain chemical compounds. Polluted air and humid climate can speed up the corrosion process\
+                            We try to find the rate of corrosion emperically by combining these factors, namely\
+                                humidity, temperature and certain gases like Sulphur Dioxide"
+                
+
+                st.markdown(f"<span style='font-size: 16px'>{selected_ground_option_text}</span>", unsafe_allow_html=True)
+                val = "The green region have relatively low corrosion rate whereas yellow-red region have higher corrosion rates"
+                st.markdown(f"<span style='font-size: 12px'>{val}</span>", unsafe_allow_html=True)
+
+            col1, col2 = st.columns( [0.5, 0.5])
+            with col1:
+                month = st.selectbox("Months", ["month 1", "month 2","month 3","month 4"])
+
+
+            
+
+            col1, col2 = st.columns( [0.8, 0.2])
+            with col1:               # To display the header text using css style
+                map = folium.Map(location=[16.754071892422, 76.85516009399588], zoom_start=11, scrollWheelZoom=True, tiles='Stamen Terrain')
+            
+                folium.TileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+                        attr='ArcGIS',
+                        name='Satellite',
+                        overlay=True,
+                        control=True).add_to(map)
+                #folium.LayerControl().add_to(map)
+                
+                img = folium.raster_layers.ImageOverlay(
+                name= structural,
+                image="./static/{}_corr.png".format(month.split(' ')[1]),
+                bounds=vertices,
+                opacity=1.0,
+                interactive=True,
+                cross_origin=False,
+                zindex=1,
+                )
+
+                img.add_to(map)
+                for i in range(len(locations)):
+                    if locations[i]==(20.82000651, 80.44361421) or locations[i]==(20.83398309, 80.4599096):
+                        folium.CircleMarker(location=locations[i],radius=30,color='red',line_width=50, opacity=5).add_to(map)
+                        folium.Marker(location=locations[i],
+                            icon= folium.Icon(color='blue',
+                            icon_color='yellow',icon ="tower"),popup='Coordinates: {}, Max Pollution Density: 0.00053'.format(locations[i])).add_to(map)
+                    else:
+                        folium.Marker(location=locations[i],
+                            icon= folium.Icon(color='blue',
+                            icon_color='yellow',icon ="tower"),popup='Coordinates: {}'.format(locations[i])).add_to(map)
+                polygon = folium.Polygon(locations=verticesROW, color='black', fill_color=None, fill_opacity=1.0).add_to(map)
+                
+
+                st_map = st_folium(map, width=1100, height=550)
+                folium.LayerControl().add_to(map)
+            
+                
+            with col2:               # To display brand log
+                # val = "The PDM is in mol/meter-square"
+                # st.markdown(f"<span style='font-size: 16px'>{val}</span>", unsafe_allow_html=True)
+                st.image(Image.open("./static/corr_leg.png"))
                 val = "More susceptible regions are in yellow - red range"
                 st.markdown(f"<span style='font-size: 13px'>{val}</span>", unsafe_allow_html=True)
 
