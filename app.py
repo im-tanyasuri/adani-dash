@@ -686,7 +686,7 @@ if check_password():
                 img = folium.raster_layers.ImageOverlay(
                 name= option_3,
                 image="./static/hotspot2.png",
-                bounds=verticesROW,
+                bounds=vertices,
                 opacity=1.0,
                 interactive=True,
                 cross_origin=False,
