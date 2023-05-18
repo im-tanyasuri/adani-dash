@@ -415,7 +415,7 @@ if check_password():
             
             structural = st.selectbox("Insight", ["Land Subsidence", "Potential Fouling Zones","Atmospheric Corrosion"])
         if structural =="Land Subsidence":
-            col1, col2 = st.columns( [0.85, 0.15])
+            col1, col2 = st.columns( [0.9, 0.1])
             with col1:               # To display the header text using css style
                 st.markdown(""" <style> .font {
                 font-size:30px ; font-family: 'Cooper Black'; color: #ffffff;} 
