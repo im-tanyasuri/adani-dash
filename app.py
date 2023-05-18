@@ -441,7 +441,7 @@ if check_password():
                 
             
 
-            col1,col2 = st.columns( [0.5, 0.5])
+            col1,col2 = st.columns( [0.75, 0.25])
             with col1 : 
                 disp = st.selectbox("Displacement Range", ["Entire", "-0.109 to -0.054","-0.054 to 0.001","0.001 to 0.055", "0.055 to 0.11"])
                 dict_ls = {"Entire":"indiGrid","-0.109 to -0.054":'first',"-0.054 to 0.001":'sec',"0.001 to 0.055":'third',"0.055 to 0.11":'four'}
@@ -449,8 +449,7 @@ if check_password():
     
                 if structural == "Land Subsidence":
                     st.image(Image.open("./static/{}_new.png".format("ls")))
-                    val = "The positive value means downward displacement and the negative value means upward displacement. Yellow zones are more neutral, whereas darker the shade of blue or red, more displacement is observed"
-                    st.markdown(f"<span style='font-size: 13px'>{val}</span>", unsafe_allow_html=True)
+                   
             col1, col2 = st.columns( [0.8, 0.2])
             with col1:               # To display the header text using css style
                 map = folium.Map(location=[17.35452789273854, 76.28595787365774], zoom_start=11, scrollWheelZoom=True, tiles='Stamen Terrain')
