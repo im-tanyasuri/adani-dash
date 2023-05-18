@@ -450,8 +450,7 @@ if check_password():
                 st.write(" ")
                 if structural == "Land Subsidence":
                     st.image(Image.open("./static/{}_new.png".format("ls")))
-                    val = "The positive value means downward displacement and the negative value means upward displacement. Yellow zones are more neutral, whereas darker the shade of blue or red, more displacement is observed"
-                    st.markdown(f"<span style='font-size: 13px'>{val}</span>", unsafe_allow_html=True)
+                    
             col1, col2 = st.columns( [0.8, 0.2])
             with col1:               # To display the header text using css style
                 map = folium.Map(location=[17.35452789273854, 76.28595787365774], zoom_start=11, scrollWheelZoom=True, tiles='Stamen Terrain')
