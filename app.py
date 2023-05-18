@@ -484,7 +484,7 @@ if check_password():
                     st.markdown(f"<span style='font-size: 13px'>{val}</span>", unsafe_allow_html=True)
         
         elif structural == "Potential Fouling Zones":
-            col1, col2 = st.columns( [0.8, 0.2])
+            col1, col2 = st.columns( [0.7, 0.3])
             with col1:               # To display the header text using css style
                 st.markdown(""" <style> .font {
                 font-size:30px ; font-family: 'Cooper Black'; color: #ffffff;} 
