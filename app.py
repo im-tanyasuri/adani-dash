@@ -685,7 +685,7 @@ if check_password():
                 
                 img = folium.raster_layers.ImageOverlay(
                 name= option_3,
-                image="./static/temp_row.png",
+                image="./static/temprow.png",
                 bounds=verticesROW,
                 opacity=1.0,
                 interactive=True,
