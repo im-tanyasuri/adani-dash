@@ -921,6 +921,106 @@ if check_password():
 
     elif choose =="Report Generation":
         col1,col2 = st.columns([0.94,0.06])
+        df = pd.read_csv('./static/report.csv')
+        measure = st.selectbox("Insight", ["Temperature", "Vegetation encroachment","Land Subsidence","Potential Fouling","Corrosion"])
+        if measure =="Temperature":
+            df_temp = df[['latitude', 'longitude', 'Temperature']]
+            df_temp = df_temp.loc[df_temp['Temperature'] == 1]
+            df_temp["tuple"] = df_temp[["latitude","longitude"]].apply(tuple, axis=1)
+            map = folium.Map(location=[16.754071892422, 76.85516009399588], zoom_start=11, scrollWheelZoom=True, tiles='Stamen Terrain')
+            
+            folium.TileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+                        attr='ArcGIS',
+                        name='Satellite',
+                        overlay=True,
+                        control=True).add_to(map)
+            #st.map(data=df_temp)
+            poly = folium.Polygon(locations=verticesROW, color='black', fill_color=None, fill_opacity=1.0).add_to(map)
+            locs = list(df_temp['tuple'])
+            for i in range(len(locs)):
+                
+                folium.CircleMarker(location=locs[i],radius=2,color='red',line_width=50, opacity=5).add_to(map)
+                # folium.Marker(location=locations[i],
+                #     icon= folium.Icon(color='blue',
+                #     icon_color='yellow',icon ="tower"),popup='Name : {} \n Coordinates: {}'.format(names[i],locations[i])).add_to(map)
+
+
+        elif measure =="Vegetation encroachment":
+            df_temp = df[['latitude', 'longitude', 'Vegetation encroachment']]
+            df_temp = df_temp.loc[df_temp['Vegetation encroachment'] == 1]
+            df_temp["tuple"] = df_temp[["latitude","longitude"]].apply(tuple, axis=1)
+            map = folium.Map(location=[16.754071892422, 76.85516009399588], zoom_start=11, scrollWheelZoom=True, tiles='Stamen Terrain')
+            
+            folium.TileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+                        attr='ArcGIS',
+                        name='Satellite',
+                        overlay=True,
+                        control=True).add_to(map)
+            #st.map(data=df_temp)
+            poly = folium.Polygon(locations=verticesROW, color='black', fill_color=None, fill_opacity=1.0).add_to(map)
+            locs = list(df_temp['tuple'])
+            for i in range(len(locs)):
+                
+                folium.CircleMarker(location=locs[i],radius=2,color='green',line_width=50, opacity=5).add_to(map)
+
+        elif measure =="Land Subsidence":
+            df_temp = df[['latitude', 'longitude', 'Land Subsidence']]
+            df_temp = df_temp.loc[df_temp['Land Subsidence'] == 1]
+            df_temp["tuple"] = df_temp[["latitude","longitude"]].apply(tuple, axis=1)
+            map = folium.Map(location=[16.754071892422, 76.85516009399588], zoom_start=11, scrollWheelZoom=True, tiles='Stamen Terrain')
+            
+            folium.TileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+                        attr='ArcGIS',
+                        name='Satellite',
+                        overlay=True,
+                        control=True).add_to(map)
+            #st.map(data=df_temp)
+            poly = folium.Polygon(locations=verticesROW, color='black', fill_color=None, fill_opacity=1.0).add_to(map)
+            locs = list(df_temp['tuple'])
+            for i in range(len(locs)):
+                
+                folium.CircleMarker(location=locs[i],radius=2,color='blue',line_width=50, opacity=5).add_to(map)
+            
+
+        elif measure =="Potential Fouling":
+            df_temp = df[['latitude', 'longitude', 'Potential Fouling']]
+            df_temp = df_temp.loc[df_temp['Potential Fouling'] == 1]
+            df_temp["tuple"] = df_temp[["latitude","longitude"]].apply(tuple, axis=1)
+            map = folium.Map(location=[16.754071892422, 76.85516009399588], zoom_start=11, scrollWheelZoom=True, tiles='Stamen Terrain')
+            
+            folium.TileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+                        attr='ArcGIS',
+                        name='Satellite',
+                        overlay=True,
+                        control=True).add_to(map)
+            #st.map(data=df_temp)
+            poly = folium.Polygon(locations=verticesROW, color='black', fill_color=None, fill_opacity=1.0).add_to(map)
+            locs = list(df_temp['tuple'])
+            for i in range(len(locs)):
+                
+                folium.CircleMarker(location=locs[i],radius=2,color='orange',line_width=50, opacity=5).add_to(map)
+
+
+        elif measure =="Corrosion":
+            df_temp = df[['latitude', 'longitude', 'Corrosion']]
+            df_temp = df_temp.loc[df_temp['Corrosion'] == 1]
+            df_temp["tuple"] = df_temp[["latitude","longitude"]].apply(tuple, axis=1)
+            map = folium.Map(location=[16.754071892422, 76.85516009399588], zoom_start=11, scrollWheelZoom=True, tiles='Stamen Terrain')
+            
+            folium.TileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+                        attr='ArcGIS',
+                        name='Satellite',
+                        overlay=True,
+                        control=True).add_to(map)
+            #st.map(data=df_temp)
+            poly = folium.Polygon(locations=verticesROW, color='black', fill_color=None, fill_opacity=1.0).add_to(map)
+            locs = list(df_temp['tuple'])
+            for i in range(len(locs)):
+                
+                folium.CircleMarker(location=locs[i],radius=2,color='white',line_width=50, opacity=5).add_to(map)
+
+        st_map = st_folium(map, width=1100, height=550)
+            # st.map(data=df_temp)
         with col1:
             st.markdown(""" <style> .fonty {
                 font-size:75px ; font-family: 'Cooper Black'; color: #ffffff;} 

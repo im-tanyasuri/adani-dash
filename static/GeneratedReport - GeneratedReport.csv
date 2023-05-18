@@ -1,0 +1,349 @@
+latitude,longitude,name,Temperature,Vegetation encroachment,Land Subsidence,Potential Fouling,Corrosion
+16.2018478,77.28195398,Loc-1,,,,,low-moderate
+16.20225723,77.27955486,Loc-2,,,,,low-moderate
+16.20417844,77.27821501,Loc-3,,,,,low-moderate
+16.20739083,77.27759867,Loc-4,,,,,low-moderate
+16.21065987,77.27699207,Loc-5,,,,,low-moderate
+16.21390636,77.27637149,Loc-6,,,,,low-moderate
+16.21716228,77.27574415,Loc-7,,,,moderate-high,low-moderate
+16.22046692,77.27513496,Loc-8,,,,moderate-high,low-moderate
+16.22370743,77.27454002,Loc-9,,,,moderate-high,low-moderate
+16.22697548,77.27394995,Loc-10,,,,moderate-high,low-moderate
+16.23004868,77.27335718,Loc-11,,,,moderate-high,low-moderate
+16.23310689,77.2727614,Loc-12,,,,moderate-high,low-moderate
+16.23653117,77.27215921,Loc-13,,,,moderate-high,low-moderate
+16.2398563,77.27153826,Loc-14,,,,moderate-high,low-moderate
+16.24173199,77.27232926,Loc-15,,,,moderate-high,low-moderate
+16.24513299,77.27123529,Loc-16,,,,moderate-high,low-moderate
+16.2484709,77.27017425,Loc-17,,,,moderate-high,low-moderate
+16.25188072,77.26904628,Loc-18,,,,moderate-high,low-moderate
+16.25523703,77.26796155,Loc-19,,,,moderate-high,low-moderate
+16.25869275,77.26683373,Loc-20,,,,moderate-high,low-moderate
+16.26200094,77.26576435,Loc-21,,,,moderate-high,low-moderate
+16.26534947,77.26472431,Loc-22,,,,moderate-high,low-moderate
+16.2670683,77.26266862,Loc-23,,,,moderate-high,low-moderate
+16.26969011,77.26011491,Loc-24,,,,moderate-high,low-moderate
+16.2723583,77.25756244,Loc-25,,,,moderate-high,low-moderate
+16.27497219,77.25512148,Loc-26,,,,moderate-high,low-moderate
+16.27743374,77.25281892,Loc-27,,,,moderate-high,low-moderate
+16.28015231,77.25021379,Loc-28,,,,moderate-high,low-moderate
+16.28282071,77.2476367,Loc-29,,,,moderate-high,low-moderate
+16.28548156,77.24507598,Loc-30,,,,moderate-high,low-moderate
+16.28688028,77.24325746,Loc-31,,,,moderate-high,low-moderate
+16.28970397,77.24093225,Loc-32,,,,moderate-high,low-moderate
+16.29240211,77.23859929,Loc-33,,,,moderate-high,low-moderate
+16.29517042,77.23627013,Loc-34,,,,moderate-high,low-moderate
+16.29792163,77.23394541,Loc-35,,,,moderate-high,low-moderate
+16.3006534,77.23156413,Loc-36,,,,moderate-high,low-moderate
+16.30332677,77.22925198,Loc-37,,,,moderate-high,low-moderate
+16.30608457,77.22698601,Loc-38,,,,moderate-high,low-moderate
+16.30888386,77.22461148,Loc-39,,,,moderate-high,low-moderate
+16.31070725,77.22335552,Loc-40,,,,moderate-high,low-moderate
+16.31239519,77.2221776,Loc-41,,,,moderate-high,low-moderate
+16.31479599,77.21956675,Loc-42,>=40 +-(4-5 deg) ,,,moderate-high,low-moderate
+16.31723121,77.21695079,Loc-43,>=40 +-(4-5 deg) ,,,moderate-high,low-moderate
+16.31960175,77.21429511,Loc-44,>=40 +-(4-5 deg) ,,,moderate-high,low-moderate
+16.32201148,77.21164103,Loc-45,,,,moderate-high,low-moderate
+16.32431077,77.20909214,Loc-46,,,,moderate-high,low-moderate
+16.32667777,77.20648689,Loc-47,,,,moderate-high,low-moderate
+16.32909638,77.20384109,Loc-48,,,,moderate-high,low-moderate
+16.33146492,77.20121293,Loc-49,,,,moderate-high,low-moderate
+16.33386515,77.19857907,Loc-50,,,,moderate-high,low-moderate
+16.33626606,77.19591995,Loc-51,,,,moderate-high,low-moderate
+16.33863728,77.19332372,Loc-52,,,,moderate-high,low-moderate
+16.3410103,77.19071831,Loc-53,,,,moderate-high,
+16.34335189,77.18811768,Loc-54,,,,moderate-high,
+16.34575443,77.18545453,Loc-55,,,,moderate-high,
+16.34819891,77.18277535,Loc-56,,,,moderate-high,
+16.35060597,77.18015901,Loc-57,,,,moderate-high,
+16.35298179,77.17731169,Loc-58,,,,moderate-high,
+16.35537875,77.17465006,Loc-59,,,,moderate-high,
+16.35782143,77.17214236,Loc-60,,,,moderate-high,
+16.36020869,77.16958377,Loc-61,,,,moderate-high,
+16.36259393,77.16691679,Loc-62,,,,moderate-high,
+16.36515104,77.16408194,Loc-63,,,,moderate-high,
+16.36744395,77.161567,Loc-64,,,,moderate-high,
+16.36986931,77.15889091,Loc-65,,,,moderate-high,
+16.37222852,77.15628548,Loc-66,,,,moderate-high,
+16.37466081,77.1536078,Loc-67,,,,moderate-high,
+16.37711203,77.15088203,Loc-68,>=40 +-(4-5 deg) ,,,moderate-high,
+16.37950112,77.148189,Loc-69,,,,moderate-high,
+16.38192522,77.1455659,Loc-70,,,,moderate-high,
+16.38438978,77.14282946,Loc-71,,,,moderate-high,
+16.38696038,77.13999212,Loc-72,,,,moderate-high,
+16.38913494,77.13760202,Loc-73,,,,moderate-high,
+16.39144966,77.13503936,Loc-74,,,,moderate-high,
+16.39392289,77.13233106,Loc-75,>=40 +-(4-5 deg) ,,,moderate-high,
+16.39672659,77.13252394,Loc-76,>=40 +-(4-5 deg) ,,,moderate-high,
+16.3995563,77.1302286,Loc-77,,,,moderate-high,
+16.4023916,77.12794281,Loc-78,,,,moderate-high,
+16.40530077,77.12566785,Loc-79,>=40 +-(4-5 deg) ,,,moderate-high,
+16.4081963,77.12338254,Loc-80,>=40 +-(4-5 deg) ,,,moderate-high,
+16.41105898,77.12108585,Loc-81,>=40 +-(4-5 deg) ,,,moderate-high,
+16.41391945,77.11882965,Loc-82,>=40 +-(4-5 deg) ,,,moderate-high,
+16.41677611,77.11656189,Loc-83,>=40 +-(4-5 deg) ,,low,moderate-high,
+16.41957195,77.11434165,Loc-84,,,low,moderate-high,
+16.42216111,77.11233018,Loc-85,,,low,moderate-high,
+16.4248403,77.11013656,Loc-86,,,low,moderate-high,
+16.42768113,77.10788889,Loc-87,>=40 +-(4-5 deg) ,,low,moderate-high,
+16.43046175,77.10565827,Loc-88,,,low,moderate-high,
+16.43327779,77.10342119,Loc-89,,,,moderate-high,
+16.43625122,77.10105868,Loc-90,>=40 +-(4-5 deg) ,,,moderate-high,
+16.43893337,77.0989257,Loc-91,>=40 +-(4-5 deg) ,,,moderate-high,
+16.44174354,77.09667429,Loc-92,,low,,moderate-high,
+16.44457833,77.09444371,Loc-93,>=40 +-(4-5 deg) ,,,moderate-high,
+16.44745454,77.09216733,Loc-94,>=40 +-(4-5 deg) ,,,moderate-high,
+16.45033224,77.08971089,Loc-95,>=40 +-(4-5 deg) ,,,moderate-high,
+16.45315754,77.08753654,Loc-96,>=40 +-(4-5 deg) ,,,moderate-high,
+16.45606239,77.08524856,Loc-97,>=40 +-(4-5 deg) ,,,moderate-high,
+16.45893834,77.08299041,Loc-98,>=40 +-(4-5 deg) ,,,moderate-high,
+16.46183094,77.08068371,Loc-99,>=40 +-(4-5 deg) ,,,moderate-high,
+16.46462528,77.07846375,Loc-100,>=40 +-(4-5 deg) ,,,moderate-high,
+16.4674745,77.0761934,Loc-101,>=40 +-(4-5 deg) ,,,moderate-high,
+16.47029145,77.07397579,Loc-102,>=40 +-(4-5 deg) ,,,moderate-high,
+16.47311472,77.07169293,Loc-103,>=40 +-(4-5 deg) ,,,moderate-high,
+16.4758924,77.069452,Loc-104,>=40 +-(4-5 deg) ,,,moderate-high,
+16.47875272,77.06718983,Loc-105,>=40 +-(4-5 deg) ,,,moderate-high,
+16.48156423,77.06495896,Loc-106,,,,moderate-high,
+16.48439592,77.06267168,Loc-107,,,,moderate-high,
+16.48721432,77.06050642,Loc-108,,,,moderate-high,
+16.49008104,77.05818193,Loc-109,,,,moderate-high,
+16.49295184,77.055881,Loc-110,,,,moderate-high,
+16.49572232,77.05368267,Loc-111,,,,moderate-high,
+16.49858343,77.05138846,Loc-112,>=40 +-(4-5 deg) ,,,moderate-high,
+16.5014298,77.04914052,Loc-113,,,,moderate-high,
+16.50441779,77.04677747,Loc-114,,,,moderate-high,
+16.50720018,77.0446424,Loc-115,,,,moderate-high,
+16.50998173,77.04250213,Loc-116,,,,moderate-high,
+16.51279775,77.04032156,Loc-117,,,,moderate-high,
+16.51635351,77.03758932,Loc-118,,,,moderate-high,
+16.51971144,77.0349808,Loc-119,,,,moderate-high,
+16.52247167,77.0328471,Loc-120,,,,moderate-high,
+16.52596837,77.03213339,Loc-121,,,,moderate-high,
+16.52948482,77.03136115,Loc-122,,,,moderate-high,
+16.53285854,77.03009553,Loc-123,>=40 +-(4-5 deg) ,,,moderate-high,
+16.53613494,77.02884939,Loc-124,,,,moderate-high,
+16.55619539,77.02123141,Loc-130,>=40 +-(4-5 deg) ,,,moderate-high,
+16.57756998,77.0023479,Loc-138,>=40 +-(4-5 deg) ,,,moderate-high,
+16.58004391,76.99962623,Loc-139,>=40 +-(4-5 deg) ,,,moderate-high,
+16.58246336,76.99684396,Loc-140,>=40 +-(4-5 deg) ,,,moderate-high,
+16.60868981,76.96886719,Loc-151,,,,moderate-high,
+16.61100083,76.9663633,Loc-152,,,,moderate-high,
+16.61340951,76.96374952,Loc-153,,,,moderate-high,
+16.61582946,76.96112294,Loc-154,,,,moderate-high,
+16.61825997,76.9585136,Loc-155,,,,moderate-high,
+16.6208025,76.95573022,Loc-156,,,,moderate-high,
+16.62321555,76.95309986,Loc-157,,,,moderate-high,
+16.62609994,76.95091044,Loc-158,,,,moderate-high,
+16.62901731,76.94872964,Loc-159,,,,moderate-high,
+16.63191747,76.94656411,Loc-160,,,,moderate-high,
+16.63489581,76.94432659,Loc-161,,,,moderate-high,
+16.6376674,76.94227158,Loc-162,,,,moderate-high,
+16.67835795,76.90223816,Loc-179,,,low-moderate,,
+16.68116668,76.90018989,Loc-180,,,low-moderate,,
+16.68400317,76.89813485,Loc-181,,,low-moderate,,
+16.68680571,76.8961069,Loc-182,,,low-moderate,,
+16.689488,76.89413431,Loc-183,,,low-moderate,,
+16.6924492,76.89198326,Loc-184,,,low-moderate,,
+16.69472495,76.89032295,Loc-185,,,low-moderate,,
+16.69733099,76.88836381,Loc-186,,,low-moderate,,
+16.70033054,76.88614902,Loc-187,,,low-moderate,,
+16.70326592,76.88392085,Loc-188,,,low-moderate,,
+16.7055128,76.8822627,Loc-189,,,low-moderate,,
+16.70989348,76.88181672,Loc-190,,,low-moderate,,
+16.7133776,76.8814715,Loc-191,,,low-moderate,,
+16.80112375,76.80609248,Loc-224,,,,,low-moderate
+16.80336956,76.80337607,Loc-225,,,,,low-moderate
+16.80556838,76.80061096,Loc-226,,,,,low-moderate
+16.80787055,76.79781741,Loc-227,,,,,low-moderate
+16.80796828,76.79511233,Loc-228,,,,,low-moderate
+16.80803174,76.79208153,Loc-229,,,,,low-moderate
+16.80960952,76.78939481,Loc-230,,,,,low-moderate
+16.8324234,76.77351124,Loc-238,,,,moderate-high,
+16.83508987,76.771603,Loc-239,,,,moderate-high,
+16.83810447,76.76954812,Loc-240,,,,moderate-high,
+16.8408489,76.76761751,Loc-241,,,,moderate-high,
+16.85783537,76.75034442,Loc-248,>=40 +-(4-5 deg) ,,,,
+16.86633363,76.73897233,Loc-252,>=40 +-(4-5 deg) ,,,,
+16.86844636,76.73614069,Loc-253,>=40 +-(4-5 deg) ,,,,
+16.88321362,76.71652675,Loc-260,>=40 +-(4-5 deg) ,,,,
+16.88536424,76.71367436,Loc-261,>=40 +-(4-5 deg) ,,,,
+16.88745968,76.71092718,Loc-262,>=40 +-(4-5 deg) ,,,,
+16.89172989,76.70525516,Loc-264,>=40 +-(4-5 deg) ,,,,
+16.89392299,76.70235388,Loc-265,>=40 +-(4-5 deg) ,,,,
+16.92313665,76.67036696,Loc-277,>=40 +-(4-5 deg) ,,,,
+16.92575857,76.66780584,Loc-278,>=40 +-(4-5 deg) ,,,,
+16.94089505,76.65272935,Loc-284,>=40 +-(4-5 deg) ,,,,
+16.94343375,76.65019785,Loc-285,>=40 +-(4-5 deg) ,,,,
+16.95100368,76.64265573,Loc-288,,,,,low-moderate
+16.9535807,76.64010139,Loc-289,,,,,low-moderate
+16.95620178,76.63749584,Loc-290,,,,,low-moderate
+16.95866689,76.63505489,Loc-291,,,,,low-moderate
+16.96124663,76.63248525,Loc-292,,,,low-moderate,low-moderate
+16.96368219,76.63005647,Loc-293,,,,low-moderate,low-moderate
+16.96633926,76.6273905,Loc-294,,,,,low-moderate
+17.03421048,76.55412246,Loc-323,>=40 +-(4-5 deg) ,,,,
+17.09982487,76.49516385,Loc-348,,low,,,
+17.13426504,76.47104264,Loc-360,,,low-moderate,,
+17.13745358,76.46931368,Loc-361,,,low-moderate,,
+17.14020647,76.46723251,Loc-362,,,low-moderate,,
+17.14310319,76.46498422,Loc-363,,,low-moderate,low-moderate,
+17.1461136,76.46276368,Loc-364,,,low-moderate,low-moderate,
+17.15034649,76.46309541,Loc-365,,,low-moderate,low-moderate,
+17.15336937,76.4606493,Loc-366,,,low-moderate,,
+17.1560814,76.45845616,Loc-367,,,low-moderate,,
+17.15900806,76.45603892,Loc-368,,,low-moderate,,
+17.16167311,76.45382587,Loc-369,,,low-moderate,,low-moderate
+17.16451757,76.45149125,Loc-370,,,low-moderate,,low-moderate
+17.16682083,76.44924875,Loc-371,,,low-moderate,,low-moderate
+17.16948292,76.44658266,Loc-372,,,low-moderate,,low-moderate
+17.1722446,76.4438138,Loc-373,,,low-moderate,,low-moderate
+17.17477835,76.44145418,Loc-374,,,low-moderate,,low-moderate
+17.1774014,76.4388586,Loc-375,,,low-moderate,,low-moderate
+17.17998834,76.43636659,Loc-376,,,low-moderate,,low-moderate
+17.18257283,76.43381243,Loc-377,,,low-moderate,,low-moderate
+17.18515639,76.43132772,Loc-378,,,low-moderate,,low-moderate
+17.18782151,76.42874019,Loc-379,,,low-moderate,,low-moderate
+17.19026527,76.4263386,Loc-380,>=40 +-(4-5 deg) ,,low-moderate,,low-moderate
+17.19262196,76.42402108,Loc-381,,,low-moderate,,low-moderate
+17.19548751,76.42124667,Loc-382,,,low-moderate,,low-moderate
+17.19804636,76.41875709,Loc-383,,,low-moderate,,
+17.20057174,76.41628794,Loc-384,,,low-moderate,,
+17.20320855,76.41370108,Loc-385,,,low-moderate,,
+17.20574871,76.41117479,Loc-386,,,low-moderate,,
+17.20833142,76.40867862,Loc-387,,,low-moderate,,
+17.21093924,76.4061624,Loc-388,,,low-moderate,,
+17.21372154,76.40344627,Loc-389,,,low-moderate,,
+17.21608703,76.40117139,Loc-390,,,low-moderate,,
+17.21864572,76.39861155,Loc-391,,,low-moderate,,
+17.2214256,76.39625202,Loc-392,,,low-moderate,,low-moderate
+17.22416659,76.39389499,Loc-393,,,low-moderate,,low-moderate
+17.2268812,76.39166983,Loc-394,,,low-moderate,,low-moderate
+17.22943832,76.38952841,Loc-395,,,low-moderate,,low-moderate
+17.23218057,76.38722631,Loc-396,,,low-moderate,,low-moderate
+17.23474872,76.38501989,Loc-397,,,low-moderate,,low-moderate
+17.23730472,76.38286281,Loc-398,,,low-moderate,,low-moderate
+17.23999624,76.38060551,Loc-399,,,low-moderate,,low-moderate
+17.24266689,76.37832372,Loc-400,>=40 +-(4-5 deg) ,,low-moderate,,low-moderate
+17.24534867,76.376077,Loc-401,,,low-moderate,,low-moderate
+17.24802555,76.37382236,Loc-402,,,low-moderate,,low-moderate
+17.25067805,76.37153093,Loc-403,,,low-moderate,,low-moderate
+17.25339338,76.36910694,Loc-404,,,low-moderate,,low-moderate
+17.25604289,76.36667345,Loc-405,>=40 +-(4-5 deg) ,,low-moderate,,low-moderate
+17.25876966,76.36419865,Loc-406,,,low-moderate,,low-moderate
+17.26136218,76.36180207,Loc-407,,,low-moderate,,low-moderate
+17.26400153,76.35939111,Loc-408,,,low-moderate,,low-moderate
+17.26651601,76.35698854,Loc-409,,,low-moderate,,low-moderate
+17.2691717,76.35455213,Loc-410,,,low-moderate,,low-moderate
+17.27184538,76.35209241,Loc-411,,,low-moderate,,low-moderate
+17.27438561,76.34976666,Loc-412,,,low-moderate,,low-moderate
+17.27699254,76.34733835,Loc-413,,,low-moderate,,low-moderate
+17.27968823,76.344815,Loc-414,,,low-moderate,,low-moderate
+17.2823556,76.34249439,Loc-415,,,low-moderate,,low-moderate
+17.285061,76.34018108,Loc-416,,,low-moderate,,low-moderate
+17.28767604,76.3378633,Loc-417,,,low-moderate,,low-moderate
+17.29033572,76.33552549,Loc-418,,,low-moderate,,low-moderate
+17.2930131,76.33317302,Loc-419,,,low-moderate,,low-moderate
+17.2956795,76.33080696,Loc-420,,,low-moderate,,low-moderate
+17.29834557,76.32848995,Loc-421,,,low-moderate,,low-moderate
+17.30105434,76.32608616,Loc-422,,,low-moderate,,low-moderate
+17.3037123,76.32378203,Loc-423,,,low-moderate,,low-moderate
+17.30643004,76.32141279,Loc-424,>=40 +-(4-5 deg) ,,low-moderate,,low-moderate
+17.30914274,76.31924809,Loc-425,,,low-moderate,,low-moderate
+17.31145566,76.31743514,Loc-426,,,low-moderate,,low-moderate
+17.31427938,76.31523808,Loc-427,,,low-moderate,,low-moderate
+17.31700741,76.31310872,Loc-428,,,low-moderate,,low-moderate
+17.31971726,76.31097696,Loc-429,,,low-moderate,,low-moderate
+17.32246719,76.30877296,Loc-430,,,low-moderate,,low-moderate
+17.32527785,76.30652949,Loc-431,,,low-moderate,,low-moderate
+17.32803699,76.30431167,Loc-432,,,low-moderate,,low-moderate
+17.33090893,76.30207993,Loc-433,,,low-moderate,,low-moderate
+17.3337013,76.29984981,Loc-434,,,low-moderate,,low-moderate
+17.33655883,76.29756907,Loc-435,>=40 +-(4-5 deg) ,,low-moderate,,low-moderate
+17.33938193,76.29531097,Loc-436,,,low-moderate,,low-moderate
+17.34224689,76.29303334,Loc-437,,,low-moderate,,low-moderate
+17.34526325,76.2913069,Loc-438,,,low-moderate,,low-moderate
+17.34832973,76.2895599,Loc-439,,,low-moderate,,low-moderate
+17.35136185,76.2877724,Loc-440,>=40 +-(4-5 deg) ,,low-moderate,,low-moderate
+17.35452789,76.28595787,Loc-441,>=40 +-(4-5 deg) ,,low-moderate,,low-moderate
+17.35759778,76.28418054,Loc-442,>=40 +-(4-5 deg) ,,low-moderate,,low-moderate
+17.36021396,76.28193189,Loc-443,>=40 +-(4-5 deg) ,,low-moderate,,low-moderate
+17.36296796,76.27960787,Loc-444,,,low-moderate,,low-moderate
+17.3654679,76.27747915,Loc-445,,,low-moderate,,low-moderate
+17.36815626,76.27517839,Loc-446,,,low-moderate,,low-moderate
+17.37080643,76.27291699,Loc-447,,,low-moderate,,
+17.37373909,76.27045756,Loc-448,,,low-moderate,low-moderate,
+17.37637241,76.26819552,Loc-449,,,low-moderate,low-moderate,
+17.37921275,76.26577307,Loc-450,>=40 +-(4-5 deg) ,,low-moderate,low-moderate,
+17.38149784,76.26306777,Loc-451,>=40 +-(4-5 deg) ,,low-moderate,low-moderate,
+17.38378565,76.2603018,Loc-452,,,low-moderate,low-moderate,
+17.38628301,76.25732691,Loc-453,,,low-moderate,low-moderate,
+17.38859479,76.2545783,Loc-454,,,low-moderate,low-moderate,
+17.39088436,76.25182109,Loc-455,,,low-moderate,low-moderate,
+17.39324457,76.24901204,Loc-456,,,low-moderate,low-moderate,
+17.39572054,76.24610849,Loc-457,,,low-moderate,low-moderate,
+17.39778369,76.24640618,Loc-458,,,low-moderate,low-moderate,
+17.40017085,76.24427594,Loc-459,,,low-moderate,low-moderate,
+17.40299995,76.2416731,Loc-460,,,low-moderate,,
+17.4055443,76.2392961,Loc-461,,,low-moderate,,
+17.40801634,76.23700677,Loc-462,,,low-moderate,,
+17.41070507,76.23448411,Loc-463,,,low-moderate,,
+17.41338539,76.23204745,Loc-464,,,low-moderate,,
+17.41598207,76.22968053,Loc-465,>=40 +-(4-5 deg) ,,low-moderate,,
+17.41872687,76.2271325,Loc-466,>=40 +-(4-5 deg) ,,low-moderate,,
+17.42152925,76.22455169,Loc-467,,,low-moderate,,
+17.42425498,76.22201778,Loc-468,,,low-moderate,,
+17.42601782,76.22040221,Loc-469,,,low-moderate,,
+17.4290109,76.21765505,Loc-470,,,low-moderate,,
+17.43178364,76.21505386,Loc-471,,,low-moderate,,
+17.43453843,76.21256339,Loc-472,,,low-moderate,,
+17.43717013,76.21014515,Loc-473,,,low-moderate,,
+17.43989122,76.20763268,Loc-474,,,low-moderate,,
+17.44248928,76.20521202,Loc-475,,,low-moderate,,
+17.44483307,76.20307805,Loc-476,,,low-moderate,,
+17.44752627,76.20059678,Loc-477,,,low-moderate,,
+17.45024446,76.19809588,Loc-478,,,low-moderate,,
+17.45290282,76.1956366,Loc-479,,,low-moderate,,
+17.45555195,76.19322836,Loc-480,,,low-moderate,,
+17.45828532,76.19068438,Loc-481,>=40 +-(4-5 deg) ,,low-moderate,,
+17.46084738,76.18829334,Loc-482,,,low-moderate,,
+17.4634807,76.18586408,Loc-483,>=40 +-(4-5 deg) ,,low-moderate,,
+17.46610048,76.18344958,Loc-484,,,low-moderate,,
+17.46888625,76.18085342,Loc-485,,,low-moderate,,
+17.47157607,76.17834835,Loc-486,>=40 +-(4-5 deg) ,,low-moderate,,
+17.47426646,76.17588973,Loc-487,,,low-moderate,,
+17.47658647,76.17312691,Loc-488,,,low-moderate,,
+17.47885585,76.17034722,Loc-489,,,low-moderate,,
+17.48066591,76.16799466,Loc-490,,,low-moderate,,
+17.48224959,76.16589746,Loc-491,,,low-moderate,,
+17.48445435,76.16304733,Loc-492,>=40 +-(4-5 deg) ,,low-moderate,,
+17.48675265,76.1600425,Loc-493,,,low-moderate,,
+17.48895588,76.15714139,Loc-494,>=40 +-(4-5 deg) ,,low-moderate,,
+17.49120874,76.15420682,Loc-495,,,low-moderate,,
+17.49384865,76.15249449,Loc-496,,,low-moderate,,
+17.49667674,76.1506469,Loc-497,,,low-moderate,,
+17.49967659,76.14869263,Loc-498,,,low-moderate,,
+17.50253887,76.14682506,Loc-499,,,low-moderate,,
+17.50518835,76.14510175,Loc-500,,,low-moderate,,
+17.50802829,76.14324326,Loc-501,,,low-moderate,,low-moderate
+17.5109241,76.1413496,Loc-502,,,low-moderate,,low-moderate
+17.51374956,76.13950882,Loc-503,,,low-moderate,,low-moderate
+17.51656078,76.13768009,Loc-504,,,low-moderate,,low-moderate
+17.51940179,76.13583867,Loc-505,,,,,low-moderate
+17.52252172,76.13380633,Loc-506,,,,,low-moderate
+17.52547354,76.13186821,Loc-507,,,,,low-moderate
+17.52856787,76.13010545,Loc-508,,,,,low-moderate
+17.5315732,76.12845233,Loc-509,,,,low-moderate,low-moderate
+17.53474206,76.12667549,Loc-510,,,,low-moderate,
+17.53778264,76.12498434,Loc-511,,,,low-moderate,
+17.54086603,76.12325214,Loc-512,,,,low-moderate,
+17.54422525,76.12136432,Loc-513,,,,low-moderate,
+17.54719018,76.11971293,Loc-514,,,,low-moderate,
+17.55025033,76.1180066,Loc-515,,,,low-moderate,low-moderate
+17.55351985,76.11617763,Loc-516,,,,low-moderate,
+17.55658332,76.11447626,Loc-517,,,,low-moderate,
+17.55956238,76.11275178,Loc-518,,,,low-moderate,
+17.56265619,76.11101915,Loc-519,,,,low-moderate,
+17.58088219,76.10074413,Loc-525,>=40 +-(4-5 deg) ,,,,
+17.58345455,76.09929779,Loc-526,>=40 +-(4-5 deg) ,,,,
+17.58668402,76.0974955,Loc-527,>=40 +-(4-5 deg) ,,,,
