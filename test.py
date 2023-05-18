@@ -17,12 +17,12 @@ import os
 import geojson
 
 
-im = Image.open('./static/temprow.tif')
-im.save('./static/temprow.png')
+im = Image.open('./static/tr.tif')
+im.save('./static/tr.png')
 print(im)
 
 
-img = Image.open('./static/temprow.png')
+img = Image.open('./static/tr.png')
 img = img.convert("RGBA")
 datas = img.getdata()
 newData = []
@@ -33,7 +33,7 @@ for item in datas:
         newData.append(item)
  
 img.putdata(newData)
-img.save('./static/temprow.png', "PNG")
+img.save('./static/tr.png', "PNG")
 # datastring = './static/map_row.geojson'
 # with open(datastring) as f:
 #     gj = geojson.load(f)
