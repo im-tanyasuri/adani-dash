@@ -17,28 +17,28 @@ import os
 import geojson
 
 
-# im = Image.open('./static/4_corr.tif')
-# im.save('./static/4_corr.png')
-# print(im)
+im = Image.open('./static/temp_row.tif')
+im.save('./static/temp_row.png')
+print(im)
 
 
-# img = Image.open('./static/4_corr.png')
-# img = img.convert("RGBA")
-# datas = img.getdata()
-# newData = []
-# for item in datas:
-#     if item[0] == 0 and item[1] == 0 and item[2] == 0:
-#         newData.append((0, 0, 0, 0))
-#     else:
-#         newData.append(item)
+img = Image.open('./static/temp_row.png')
+img = img.convert("RGBA")
+datas = img.getdata()
+newData = []
+for item in datas:
+    if item[0] == 0 and item[1] == 0 and item[2] == 0:
+        newData.append((0, 0, 0, 0))
+    else:
+        newData.append(item)
  
-# img.putdata(newData)
-# img.save('./static/4_corr.png', "PNG")
-datastring = './static/map_row.geojson'
-with open(datastring) as f:
-    gj = geojson.load(f)
+img.putdata(newData)
+img.save('./static/temp_row.png', "PNG")
+# datastring = './static/map_row.geojson'
+# with open(datastring) as f:
+#     gj = geojson.load(f)
 
-geo = gj['features'][0]['geometry']['coordinates'][0]
-#print(geo)
-print(len(geo))
-print(geo[:10])
+# geo = gj['features'][0]['geometry']['coordinates'][0]
+# #print(geo)
+# print(len(geo))
+# print(geo[:10])
