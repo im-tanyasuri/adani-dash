@@ -441,6 +441,11 @@ if check_password():
                 
             
 
+            col1,col2 = st.columns( [0.5, 0.5])
+            with col1 : 
+                disp = st.selectbox("Displacement Range", ["Entire", "-0.109 to -0.054","-0.054 to 0.001","0.001 to 0.055", "0.055 to 0.11"])
+                dict_ls = {"-0.109 to -0.054":'first',"-0.054 to 0.001":'sec',"0.001 to 0.055":'third',"0.055 to 0.11":'four'}
+            
             col1, col2 = st.columns( [0.8, 0.2])
             with col1:               # To display the header text using css style
                 map = folium.Map(location=[16.754071892422, 76.85516009399588], zoom_start=11, scrollWheelZoom=True, tiles='Stamen Terrain')
@@ -454,7 +459,7 @@ if check_password():
                 
                 img = folium.raster_layers.ImageOverlay(
                 name= structural,
-                image="./static/{}_indiGrid.png".format(('').join(structural.split(' '))),
+                image="./static/ls_{}.png".format(dict_ls[disp]),
                 bounds=vertices,
                 opacity=1.0,
                 interactive=True,
