@@ -685,7 +685,7 @@ if check_password():
                 
                 img = folium.raster_layers.ImageOverlay(
                 name= option_3,
-                image="./static/tr.png",
+                image="./static/hotspot2.png",
                 bounds=verticesROW,
                 opacity=1.0,
                 interactive=True,
@@ -699,7 +699,7 @@ if check_password():
                         icon= folium.Icon(color='blue',
                         icon_color='yellow',icon ="tower"),popup='Name : {} \n Coordinates: {}'.format(names[i],locations[i])).add_to(map)
             
-               # polygon = folium.Polygon(locations=verticesROW, color='black', fill_color=None, fill_opacity=1.0).add_to(map)
+                polygon = folium.Polygon(locations=verticesROW, color='black', fill_color=None, fill_opacity=1.0).add_to(map)
 
                 st_map = st_folium(map, width=1100, height=550)
                 folium.LayerControl().add_to(map)
