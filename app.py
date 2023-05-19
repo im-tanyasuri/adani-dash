@@ -963,10 +963,10 @@ if check_password():
             names = list(df_temp['name'])
             for i in range(len(locs)):
                 
-                folium.CircleMarker(location=locs[i],radius=2,color='green',line_width=50, opacity=5).add_to(map)
+                folium.CircleMarker(location=locs[i],radius=2,color='green',line_width=50, opacity=5,popup='Name : {} \n Coordinates: {}'.format(names[i],locs[i])).add_to(map)
 
         elif measure =="Land Subsidence":
-            df_temp = df[['latitude', 'longitude', 'Land Subsidence']]
+            df_temp = df[['latitude', 'longitude', 'name','Land Subsidence']]
             df_temp = df_temp.loc[df_temp['Land Subsidence'] == 1]
             df_temp["tuple"] = df_temp[["latitude","longitude"]].apply(tuple, axis=1)
             map = folium.Map(location=[16.754071892422, 76.85516009399588], zoom_start=11, scrollWheelZoom=True, tiles='Stamen Terrain')
@@ -979,13 +979,14 @@ if check_password():
             #st.map(data=df_temp)
             poly = folium.Polygon(locations=verticesROW, color='black', fill_color=None, fill_opacity=1.0).add_to(map)
             locs = list(df_temp['tuple'])
+            names = list(df_temp['name'])
             for i in range(len(locs)):
                 
-                folium.CircleMarker(location=locs[i],radius=2,color='blue',line_width=50, opacity=5).add_to(map)
+                folium.CircleMarker(location=locs[i],radius=2,color='blue',line_width=50, opacity=5,popup='Name : {} \n Coordinates: {}'.format(names[i],locs[i])).add_to(map)
             
 
         elif measure =="Potential Fouling":
-            df_temp = df[['latitude', 'longitude', 'Potential Fouling']]
+            df_temp = df[['latitude', 'longitude','name', 'Potential Fouling']]
             df_temp = df_temp.loc[df_temp['Potential Fouling'] == 1]
             df_temp["tuple"] = df_temp[["latitude","longitude"]].apply(tuple, axis=1)
             map = folium.Map(location=[16.754071892422, 76.85516009399588], zoom_start=11, scrollWheelZoom=True, tiles='Stamen Terrain')
@@ -998,13 +999,14 @@ if check_password():
             #st.map(data=df_temp)
             poly = folium.Polygon(locations=verticesROW, color='black', fill_color=None, fill_opacity=1.0).add_to(map)
             locs = list(df_temp['tuple'])
+            names = list(df_temp['name'])
             for i in range(len(locs)):
                 
-                folium.CircleMarker(location=locs[i],radius=2,color='orange',line_width=50, opacity=5).add_to(map)
+                folium.CircleMarker(location=locs[i],radius=2,color='orange',line_width=50, opacity=5,popup='Name : {} \n Coordinates: {}'.format(names[i],locs[i])).add_to(map)
 
 
         elif measure =="Corrosion":
-            df_temp = df[['latitude', 'longitude', 'Corrosion']]
+            df_temp = df[['latitude', 'longitude', 'name','Corrosion']]
             df_temp = df_temp.loc[df_temp['Corrosion'] == 1]
             df_temp["tuple"] = df_temp[["latitude","longitude"]].apply(tuple, axis=1)
             map = folium.Map(location=[16.754071892422, 76.85516009399588], zoom_start=11, scrollWheelZoom=True, tiles='Stamen Terrain')
@@ -1017,9 +1019,10 @@ if check_password():
             #st.map(data=df_temp)
             poly = folium.Polygon(locations=verticesROW, color='black', fill_color=None, fill_opacity=1.0).add_to(map)
             locs = list(df_temp['tuple'])
+            names = list(df_temp['name'])
             for i in range(len(locs)):
                 
-                folium.CircleMarker(location=locs[i],radius=2,color='white',line_width=50, opacity=5).add_to(map)
+                folium.CircleMarker(location=locs[i],radius=2,color='white',line_width=50, opacity=5,popup='Name : {} \n Coordinates: {}'.format(names[i],locs[i])).add_to(map)
 
         st_map = st_folium(map, width=1100, height=550)
             # st.map(data=df_temp)
