@@ -650,7 +650,7 @@ if check_password():
         #     Month = st.selectbox("Month", ["Month"])
         with col1:
             
-            option_3 = st.selectbox("Insight", ["Temperature", "Vegetation Moisture Index","Fire Hotspots"])
+            option_3 = st.selectbox("Insight", ["Temperature", "Moisture Index","Fire Hotspots"])
 
         col1, col2 = st.columns( [0.8, 0.2])
         with col1:               # To display the header text using css style
@@ -663,7 +663,7 @@ if check_password():
             LandSurfaceTemperature_text = "The Surface Temperature map here demonstrates the heat dispersion over the ROW, with a higher value \
                                             recorded when the intensity of radiation is higher. This is useful for identifying the\
                                                 greenhouse effect in the area. A rise in Surface Temperature could lead to dry conditions."
-            VegetationMoistureIndex_text = "The vegetation water content is calculated by NDMI, and water stress is indicated by the negative\
+            VegetationMoistureIndex_text = "The water content is calculated by NDMI, and water stress is indicated by the negative\
                                             values as they go closer to -1 and waterlogging as they get closer to +1. Thus, a\
                                                 region's agronomic situation is addressed."
 
@@ -671,7 +671,7 @@ if check_password():
                 option_3text = FireHotspots_text
             elif option_3 == "Temperature":
                 option_3text = LandSurfaceTemperature_text
-            elif option_3 == "Vegetation Moisture Index":
+            elif option_3 == "Moisture Index":
                 option_3text = VegetationMoistureIndex_text
                 
         
@@ -715,7 +715,7 @@ if check_password():
                 folium.LayerControl().add_to(map)
                 
             
-            elif option_3 == "Vegetation Moisture Index":
+            elif option_3 == "Moisture Index":
                 map = folium.Map(location=[16.754071892422, 76.85516009399588], zoom_start=11, scrollWheelZoom=True, tiles='Stamen Terrain')
             
                 folium.TileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
@@ -810,7 +810,7 @@ if check_password():
                 # st.markdown(f"<span style='font-size: 14px'>The mean LST for this area</span>", unsafe_allow_html=True)
                 # meanval = "30.091 C"
                 # st.markdown(f"<span style='font-size: 35px'>{meanval}</span>", unsafe_allow_html=True)
-            elif option_3 =="Vegetation Moisture Index":
+            elif option_3 =="Moisture Index":
                 st.image(Image.open("./static/NDMI_legend.png"))
                 # st.markdown(f"<span style='font-size: 14px'>The mean Vegetation Moisture for this area</span>", unsafe_allow_html=True)
                 # meanval = "0.042"
