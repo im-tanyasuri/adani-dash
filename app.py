@@ -937,7 +937,7 @@ if check_password():
             #st.map(data=df_temp)
             poly = folium.Polygon(locations=verticesROW, color='black', fill_color=None, fill_opacity=1.0).add_to(map)
             locs = list(df_temp['tuple'])
-            names = list(df_temp['names'])
+            names = list(df_temp['name'])
             for i in range(len(locs)):
                 
                 folium.CircleMarker(location=locs[i],radius=2,color='red',line_width=50, opacity=5,popup='Name : {} \n Coordinates: {}'.format(names[i],locs[i])).add_to(map)
@@ -960,7 +960,7 @@ if check_password():
             #st.map(data=df_temp)
             poly = folium.Polygon(locations=verticesROW, color='black', fill_color=None, fill_opacity=1.0).add_to(map)
             locs = list(df_temp['tuple'])
-            names = list(df_temp['names'])
+            names = list(df_temp['name'])
             for i in range(len(locs)):
                 
                 folium.CircleMarker(location=locs[i],radius=2,color='green',line_width=50, opacity=5).add_to(map)
